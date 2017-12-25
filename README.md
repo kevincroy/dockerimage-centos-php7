@@ -1,2 +1,8 @@
-# docker-centos-php72
-Dockerfile to include Centos 7.4 and PHP 7.2 inside.
+# DockerImage CentOS PHP72
+A small build based on CentOS.
+
+- PHP 7.2
+- nginx 1.13
+- nodejs 9.x
+- PHPUnit
+- Composer

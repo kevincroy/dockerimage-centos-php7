@@ -6,3 +6,5 @@ A small build based on CentOS.
 - nodejs 9.x
 - PHPUnit
 - Composer
+
+https://hub.docker.com/r/flexbox/centos-php72/

@@ -39,6 +39,7 @@ RUN yum -y install \
     php-mysqlnd \
     php-opcache --nogpgcheck \
     php-pdo \
+    php-posix \
     php-xml \
     php-zip
 

@@ -74,7 +74,10 @@ WORKDIR "/html"
 
 EXPOSE 80 443
 
-RUN usermod -u 1000 nginx
-RUN groupmod -g 1000 nginx
+ARG user=1000
+ARG group=1000
+
+RUN usermod -u $user nginx
+RUN groupmod -g $group nginx
 
 CMD ["/tmp/start.sh"]

@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos/systemd
 
 LABEL name="Flexbox CentOS 7.4 + PHP 7.2 Image" \
     maintainer="Alex Karshin <https://flexbox.it>" \

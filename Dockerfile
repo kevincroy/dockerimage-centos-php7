@@ -3,7 +3,7 @@ FROM centos/systemd
 LABEL name="Flexbox CentOS 7.4 + PHP 7.2 Image" \
     maintainer="Alex Karshin <https://flexbox.it>" \
     license="The Unlicense" \
-    build-date="20171224" \
+    build-date="20180512" \
     source="https://github.com/flexbox-it/dockerimage-centos-php7"
 
 # update yum
@@ -60,6 +60,7 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_9.x | bash - && \
     yum -y install nodejs
 
 RUN mkdir -p /tmp
+RUN mkdir -p /run/php-fpm
 RUN chown -R nginx:nginx /var/lib/php/session && chmod 0777 /var/lib/php/session
 
 COPY start.sh /tmp/start.sh
